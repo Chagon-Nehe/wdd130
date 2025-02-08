@@ -1,0 +1,128 @@
+:root {
+    --dark-green: #606C38;
+    --very-dark-green: #283618;
+    --light-yellow: #FEFAE0;
+    --golden-yellow: #DDA15E;
+    --brown: #BC6C25;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-yellow);
+    color: var(--very-dark-green);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--dark-green);
+    padding: 20px;
+    text-align: center;
+}
+
+header .Logo-box img {
+    width: 100px;
+    height: auto;
+}
+
+nav a {
+    color: var(--light-yellow);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: var(--golden-yellow);
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--brown);
+    font-size: 36px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero article img {
+    float: right;
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-green);
+}
+
+p {
+    color: var(--very-dark-green);
+}
+
+/* Adventure Awaits You! Section with Grid Layout */
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: start;
+}
+
+section:nth-of-type(2) h2 {
+    grid-column: span 3;
+    text-align: center;
+}
+
+section:nth-of-type(2) img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--very-dark-green);
+    color: var(--light-yellow);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: var(--light-yellow); /* Ensure the paragraph text is visible */
+}
+
+footer nav.Sociallinks a {
+    text-decoration: none;
+}
+
+footer nav.Sociallinks a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
