@@ -22,18 +22,23 @@ h1 {
 
 
 nav{
+    display: flex;
     background-color: #609C38;
     padding: 10px;
     margin: 1rem;
+    align-items:;
 }
 nav a {
+    
     color: #283618;
     display: block;
     padding: 20px;
     align-content: center;
 }
+
+
 #banner-box{
-    
+   
     margin: 1rem;
     padding: 0px;
     height: 10%;
@@ -54,7 +59,8 @@ nav a {
     margin: 1rem;
 }
 
-.section{
+section{
+   
     position: absolute;
 	background: radial-gradient(#eee, #11aa11);
 	border: 1px solid #000;

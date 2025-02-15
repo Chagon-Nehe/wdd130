@@ -17,13 +17,16 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 500px auto;
+    align-items: center;
     background-color: var(--dark-green);
     padding: 20px;
     text-align: center;
 }
 
 header .Logo-box img {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
@@ -58,9 +61,9 @@ main {
 
 .hero article {
     position: absolute;
-    bottom: 10%;
+    top: 30%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-10%);
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
@@ -82,31 +85,79 @@ main {
 h1, h2, h3, h4, h5, h6 {
     color: var(--dark-green);
 }
-
+h2 {
+    text-align: center;
+}
 p {
     color: var(--very-dark-green);
 }
+section:nth-of-type(1){
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+.History{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* min-width: 150px;
+    max-width: 1fr; */
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
 
+}
+.History img{
+    flex-basis: 100%;
+    width: 20%;
+    height: auto;
+    
+}
 /* Adventure Awaits You! Section with Grid Layout */
 section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    display: flex;
     gap: 20px;
-    align-items: start;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 0.5rem;
+    justify-content: space-around;
+    justify-content: end;
+    
 }
-
+h2{
+    align-self: center;
+}
 section:nth-of-type(2) h2 {
-    grid-column: span 3;
-    text-align: center;
+    flex-basis: 100%;
+    text-align:justify;
+    align-content: end;
 }
 
 section:nth-of-type(2) img {
-    width: 100%;
+    width: 250px;
+    margin: auto;
+    flex-basis: 100%;
     height: auto;
 }
 
+.image-container{
+    display: flex;
+    gap: 10px;
+    width: 250px;
+    flex-direction: row;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
+    justify-content:center;
+} 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-content: space-around;
     background-color: var(--very-dark-green);
     color: var(--light-yellow);
     text-align: center;
@@ -122,7 +173,15 @@ footer nav.Sociallinks a {
 }
 
 footer nav.Sociallinks a img {
+    
     width: 30px;
     height: 30px;
     margin: 0 10px;
+}
+.Sociallinks{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2px;
+    margin: 5px;
+    padding: 0px;
 }
